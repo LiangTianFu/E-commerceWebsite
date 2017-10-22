@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>购物车结算</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="headerBar">
+    <div class="topBar">
+      <div class="comWidth">
+        <div class="leftArea">
+          <a href="#" class="collection">收藏网站</a>
+        </div>
+        <div class="rightArea">
+          欢迎来到电商网站！&nbsp;&nbsp;<a href="login.html">[登录]</a>&nbsp;<a href="register.html">[免费注册]</a>
+        </div>
+      </div>
+    </div>
+    <div class="logoBar">
+      <div class="comWidth">
+        <div class="logo fl">
+          <a href="#"><img src="images/logo/logo.png" alt="电商网站" /></a>
+        </div>
+
+        <div class="stepBox fr">
+          <div class="step"></div>
+          <ul class="step_text">
+            <li class="s01 active">我的购物车</li>
+            <li class="s02 active">填写核对订单</li>
+            <li class="s03">订单提交成功</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hr_7"></div>
+
+  <div class="receivinginformation comWidth">
+    <div class="information_item">
+      <h3 class="information_tit">收货信息</h3>
+      <div class="information_cont padding_information">
+        <ul class="information_list">
+          <li><span class="information_list_text"><em>*</em>选择地址：</span>
+            <div class="select">
+              <h3>广州市  天河区</h3><span></span>
+              <ul class="show_select">
+                <li>黄埔</li>
+                <li>越秀</li>
+                <li>白云</li>
+              </ul>
+            </div>
+          </li>
+          <li><span class="information_list_text"><em>*</em>详细地址：</span><input type="text" placeholder="最多可输入26个汉字" class="input_address" /></li>
+          <li><span class="information_list_text"><em>*</em>收货人：</span><input type="text" placeholder="最多可输入10个汉字" /></li>
+          <li><span class="information_list_text"><em>*</em>手机号：</span><input type="text" placeholder="如1314131413" /><span class="cart_tel">&nbsp;或固定电话</span>
+            <input type="text" placeholder="区号" class="input_code" /><span class="cross">-</span><input type="text" placeholder="电话号码" class="input_telephone" /><span class="cross">-</span>
+            <input type="text" placeholder="分机号（可选）" class="input_telephone" /></li>
+          <li><input type="button" value="确认收货地址" class="input_confirm" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hr_25"></div>
+
+    <div class="information_item">
+      <h3 class="information_tit">支付方式</h3>
+      <div class="information_cont padding_information">
+        <ul class="information_list">
+          <li><input type="radio" class="radio" id="wechat" /><label for="wechat">微信支付，<img src="images/icon/icon_wechat.png" ></img>用微信扫一扫</label></li>
+          <li><input type="radio" class="radio" id="alipay" /><label for="alipay">支付宝支付，<img src="images/icon/icon_alipay.png" >用支付宝扫一扫</label></li>
+          <li><input type="radio" class="radio" id="cash" /><label for="cash">货到付款</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hr_25"></div>
+
+    <div class="information_item">
+      <h3 class="information_tit">发票信息</h3>
+      <div class="information_cont padding_information">
+        <ul class="information_list">
+          <li><span class="information_list_text"><em>*</em>发票类型：</span>
+            <div class="select">
+              <h3>商业零售发票</h3><span></span>
+              <ul class="show_select">
+                <li>商业批发发票</li>
+                <li>工业企业产品销售发票</li>
+                <li>增值税专用发票</li>
+              </ul>
+            </div>
+          </li>
+
+          <li><span class="information_list_text"><em>*</em>发票抬头：</span>
+            <div class="select">
+              <h3>个人</h3><span></span>
+              <ul class="show_select">
+                <li>单位</li>
+              </ul>
+            </div>
+            <input type="text" placeholder="阿斯顿" class="asd" />
+          </li>
+          <li class="save">
+            <input type="button" value="保存" class="active" />
+            <input type="button" value="取消" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hr_25"></div>
+
+    <div class="information_item">
+      <h3 class="information_tit">送货清单<a href="#" class="backCar">返回购物车修改</a></h3>
+      <div class="information_cont padding_10">
+        <div class="cart_inner">
+          <div class="cart_head clearfix">
+            <div class="cart_item t_name">商品名称</div>
+            <div class="cart_item t_price">单价</div>
+            <div class="cart_item t_return">返现</div>
+            <div class="cart_item t_num">数量</div>
+            <div class="cart_item t_sum">小计</div>
+          </div>
+
+          <div class="cart_cont clearfix">
+            <div class="cart_item t_name">
+              <div class="cart_shopInfo clearfix">
+                <img src="images/shop/icebox.png" alt="" />
+                <div class="cart_shopInfo_cont">
+                  <p class="cart_link"><a href="#">美的(Midea) 智能生态冰箱！</a></p>
+                  <p class="cart_info"><a href="#"> 450升 智能无霜对开门冰箱 玻璃面板 63.6cm薄身 APP远程控制</a></p>
+                </div>
+              </div>
+
+            </div>
+            <div class="cart_item t_price">￥1459.00</div>
+            <div class="cart_item t_return">￥0.00</div>
+            <div class="cart_item t_num">1</div>
+            <div class="cart_item t_sum t_red">￥1459.00</div>
+          </div>
+
+          <div class="cart_message">
+            若你对包裹有要求，请提出来。
+          </div>
+
+          <div class="cart_prompt">
+            <i class="cart_prompt_icon"></i>很抱歉，以下商品无法购买。
+          </div>
+          <div class="cart_cont cart_no_bor clearfix">
+            <div class="cart_item t_name">
+              <div class="cart_shopInfo clearfix">
+                <img src="images/shop/paper.png" alt="" />
+                <div class="cart_shopInfo_cont">
+                  <p class="cart_link"><a href="#">清风！</a></p>
+                  <p class="cart_info"><a href="#">￥6.90</a><span class="t_red">(缺货)</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="hr_25"></div>
+    <div class="information_item">
+      <h3 class="information_tit">结算清单</h3>
+      <div class="information_cont padding_information clearfix">
+
+        <div class="cart_count fr">
+          <div class="cart_rmb">
+            <i>总计：</i><span>￥1459.00</span>
+          </div>
+          <div class="cart_btnBox">
+            <input type="button" class="cart_btn" value="提交订单" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hr_25"></div>
+  <div class="clearfix"></div>
+  <div class="footer">
+    <p><a href="#">电商网站</a><i>|</i><a href="#">帮助中心</a><i>|</i><a href="#">诚聘英才</a<i>|</i>><a href="#">网站合作</a>
+      <i>|</i><a href="#">法律声明及隐私权政策</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-123</p>
+    <p>网络文化经营许可证：浙网文[2015]0295-065号 12318举报 浙公网安备 33010002000120号 © 2003-2017 TMALL.COM 版权所有</p>
+    <p class="web"><a href="#"><img src="images/logo/footer_logo.png" alt="logo" /></a>
+      <a href="#"><img src="images/logo/footer_logo.png" alt="logo" /></a>
+      <a href="#"><img src="images/logo/footer_logo.png" alt="logo" /></a>
+      <a href="#"><img src="images/logo/footer_logo.png" alt="logo" /></a></p>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
